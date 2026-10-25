@@ -1,0 +1,57 @@
+# Outreach and dissemination: booklets, StoryMaps, workshops, op-eds, media.
+# featured: true shows the item as the large card at the top of the Outreach page.
+# Upload a PDF with `file`, or paste a link in `link`.
+- title: "Entre selvas y comunidades"
+  type: booklet
+  date: 2024-11-01
+  featured: true
+  description: "Outreach booklet on how development and conservation initiatives and public policies shape communities and landscapes in the Calakmul–Sian Ka'an corridor. Supported by Fulbright and the National Geographic Society."
+  image: ""
+  file: ""
+  link: "https://689a47727eca620007f77057--lecalzada.netlify.app/outreach/Natgeo_booklet.pdf"
+  link_label: "Read the booklet (PDF)"
+- title: "Sembrando Vida: voces y transformaciones en Calakmul–Sian Ka'an"
+  type: op-ed
+  date: 2024-10-06
+  featured: false
+  description: "Opinion column in Pie de Página on how Sembrando Vida, aimed at rural poverty and environmental degradation, runs into the challenges of land redistribution and community participation shaped by historical inequalities."
+  image: ""
+  file: ""
+  link: "https://piedepagina.mx/sembrando-vida-voces-y-transformaciones-en-calakmul-sian-kaan/"
+  link_label: "Read in Pie de Página"
+- title: "Yaan Jump'éel Tsímin K'áak Iche' K'áaxo · There is a train across the jungle"
+  type: storymap
+  date: 2024-10-02
+  featured: false
+  description: "Voices and visions on the Maya Train, Sembrando Vida and the future of the Maya Forest, with residents and advocates on sustainable practices and collective land management."
+  image: ""
+  file: ""
+  link: "https://arcg.is/1zj81z1"
+  link_label: "Open the StoryMap"
+- title: "El susurro de los árboles"
+  type: workshop
+  date: 2024-04-21
+  featured: false
+  description: "Workshop on forest degradation and regeneration in the Calakmul–Sian Ka'an corridor for students of the Colegio de Bachilleres Técnico Forestal 007 in Zoh Laguna, Campeche."
+  image: ""
+  file: ""
+  link: "https://arcg.is/10vTeP2"
+  link_label: "Open the StoryMap"
+- title: "Nizanda. Transformación ambiental y social en el Istmo oaxaqueño"
+  type: booklet
+  date: 2018-08-01
+  featured: false
+  description: "Visual narrative of socio-environmental change in Nizanda through community voices and photography: development, renewable energy and cultural landscapes in the Isthmus of Tehuantepec. Ediciones Quinto Sol, UNAM."
+  image: ""
+  file: ""
+  link: "https://689a47727eca620007f77057--lecalzada.netlify.app/outreach/Nizanda_dissemination.pdf"
+  link_label: "Read (PDF)"
+- title: "Amatlán. Transformación ambiental y social en el norte de Morelos"
+  type: booklet
+  date: 2018-08-01
+  featured: false
+  description: "Photography and local storytelling on territory, identity and resistance in the face of extractive development and cultural change. Ediciones Quinto Sol, UNAM."
+  image: ""
+  file: ""
+  link: "https://689a47727eca620007f77057--lecalzada.netlify.app/outreach/Amatl%C3%A1n_dissemination.pdf"
+  link_label: "Read (PDF)"

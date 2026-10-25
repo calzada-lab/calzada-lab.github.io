@@ -42,6 +42,25 @@ content:
       - { name: venue, label: Journal / book / venue, type: string }
       - { name: link, label: DOI or URL, type: string }
 
+  - name: outreach
+    label: Outreach
+    type: file
+    path: data/outreach.yml
+    list: true
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - name: type
+        label: Type
+        type: select
+        options: { values: [booklet, storymap, workshop, op-ed, media, video, podcast, exhibit, report] }
+      - { name: date, label: Date, type: date }
+      - { name: featured, label: Feature at the top of the page, type: boolean }
+      - { name: description, label: Description, type: text }
+      - { name: image, label: Cover image (optional), type: image }
+      - { name: file, label: PDF (optional; upload here), type: file }
+      - { name: link, label: Link (if there is no PDF), type: string }
+      - { name: link_label, label: "Button text (e.g. Read the booklet)", type: string }
+
   - name: research
     label: Research projects
     type: file
@@ -278,3 +297,33 @@ content:
             fields:
               - { name: name, label: Title, type: string }
               - { name: text, label: Text, type: text }
+  - name: page-outreach
+    label: "Page text: Outreach"
+    type: file
+    path: data/pages/outreach.yml
+    fields:
+      - { name: eyebrow, label: Small text above the title, type: string }
+      - { name: title, label: Page title, type: string }
+      - { name: intro, label: Intro paragraph, type: text }
+      - { name: image, label: Header photo (optional), type: image }
+      - name: sections
+        label: Sections
+        type: object
+        list: true
+        fields:
+          - name: style
+            label: Background
+            type: select
+            options: { values: [plain, alt, dark] }
+          - { name: label, label: Small label, type: string }
+          - { name: title, label: Section title, type: string }
+          - { name: intro, label: Intro sentence, type: text }
+          - { name: body, label: "Text (blank line = new paragraph, **bold**, [link](https://...), ### subheading)", type: text }
+          - name: items
+            label: Columns (title + text)
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Title, type: string }
+              - { name: text, label: Text, type: text }
+

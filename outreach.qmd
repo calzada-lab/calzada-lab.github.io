@@ -1,0 +1,32 @@
+---
+title: "Outreach"
+page-layout: full
+# Page text lives in data/pages/outreach.yml; items in data/outreach.yml (admin panel: Outreach).
+listing:
+  - id: head
+    contents: data/pages/outreach.yml
+    template: _templates/page-head.ejs
+  - id: outreach
+    contents: data/outreach.yml
+    template: _templates/outreach.ejs
+  - id: sections
+    contents: data/pages/outreach.yml
+    template: _templates/sections.ejs
+---
+
+::: {#head}
+:::
+
+```{=html}
+<section class="band"><div class="wrap">
+```
+
+::: {#outreach}
+:::
+
+```{=html}
+</div></section>
+```
+
+::: {#sections}
+:::

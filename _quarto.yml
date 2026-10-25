@@ -22,6 +22,8 @@ website:
         href: people.qmd
       - text: Publications
         href: publications.qmd
+      - text: Outreach
+        href: outreach.qmd
       - text: News
         href: news.qmd
       - text: Join us

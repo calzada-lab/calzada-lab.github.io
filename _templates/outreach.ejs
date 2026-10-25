@@ -1,0 +1,50 @@
+```{=html}
+<%
+const labels = {booklet:'Booklet', storymap:'StoryMap', workshop:'Workshop', 'op-ed':'Op-ed', media:'Media', video:'Video', podcast:'Podcast', exhibit:'Exhibit', report:'Community report'};
+const tone = {booklet:'#8C0B42', storymap:'#23785A', workshop:'#0E3330', 'op-ed':'#5E0A2E', media:'#2F4A63', video:'#2F4A63', podcast:'#2F4A63', exhibit:'#A35A2A', report:'#8C0B42'};
+const src = s => String(s || '').replace(/^\//, '');
+const yearOf = d => String(d || '').slice(0, 4);
+const fmt = d => { const t = new Date(d); return isNaN(t) ? String(d || '') : t.toLocaleDateString('en-US', {year: 'numeric', month: 'short', timeZone: 'UTC'}); };
+const list = items.filter(i => i.title).sort((a, b) => String(b.date).localeCompare(String(a.date)));
+const featured = list.find(i => i.featured);
+const rest = list.filter(i => i !== featured);
+const href = i => i.file ? src(i.file) : (i.link || '');
+const types = [...new Set(rest.map(i => i.type).filter(Boolean))];
+%>
+<% if (featured) { %>
+<article class="out-feature">
+  <div class="out-media" style="<% if (featured.image) { %>background: url('<%= src(featured.image) %>') center / cover;<% } else { %>background: linear-gradient(135deg, <%= tone[featured.type] || '#8C0B42' %>, #0E3330);<% } %>"><span class="tag"><%= labels[featured.type] || featured.type %></span></div>
+  <div class="out-body">
+    <div class="section-label">Latest work</div>
+    <h2><%= featured.title %></h2>
+    <p><%= featured.description %></p>
+    <% if (href(featured)) { %><a class="btn-lab" href="<%= href(featured) %>"><%= featured.link_label || 'Open' %></a><% } %>
+  </div>
+</article>
+<% } %>
+<% if (types.length > 1) { %>
+<div class="pub-filter" role="group" aria-label="Filter outreach">
+  <button type="button" data-f="all" aria-pressed="true">All</button>
+  <% for (const t of types) { %><button type="button" data-f="<%= t %>" aria-pressed="false"><%= labels[t] || t %></button><% } %>
+</div>
+<% } %>
+<div class="out-grid">
+<% for (const i of rest) { %>
+  <article class="out-card" data-type="<%= i.type %>">
+    <div class="out-media" style="<% if (i.image) { %>background: url('<%= src(i.image) %>') center / cover;<% } else { %>background: linear-gradient(135deg, <%= tone[i.type] || '#23785A' %>, #0E3330);<% } %>"><span class="tag"><%= labels[i.type] || i.type %></span></div>
+    <div class="out-body">
+      <time><%= fmt(i.date) %></time>
+      <h3><%= i.title %></h3>
+      <p><%= i.description %></p>
+      <% if (href(i)) { %><a href="<%= href(i) %>"><%= i.link_label || 'Open' %> →</a><% } %>
+    </div>
+  </article>
+<% } %>
+</div>
+<script>
+document.querySelectorAll('.pub-filter button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.pub-filter button').forEach(x => x.setAttribute('aria-pressed', x === b));
+  document.querySelectorAll('.out-card').forEach(c => c.hidden = !(b.dataset.f === 'all' || c.dataset.type === b.dataset.f));
+}));
+</script>
+```
