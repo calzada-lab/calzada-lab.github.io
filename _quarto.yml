@@ -8,7 +8,7 @@ project:
 website:
   title: "Calzada Research Group"
   description: "Land systems, forests and the people who live with them. A research group in the Department of Geography and Environmental Studies at New Mexico State University."
-  site-url: "https://leocalzada.github.io/calzada-lab"
+  site-url: "https://calzada-lab.github.io"
   favicon: assets/img/favicon.svg
   page-navigation: false
   navbar:
