@@ -20,10 +20,10 @@
   methods: [Participatory mapping, Vulnerability indices, GIS]
   funding: "NOAA · NJ Sea Grant · Northeast Fisheries Science Center"
   link: "https://doi.org/10.1093/icesjms/fsae139"
-- title: "Agroecology and extreme environmental events"
+- title: "Landscape change and extreme environmental events"
   tag: "Mexico & US Southwest"
   color: "#5E0A2E"
-  summary: "Hurricanes, droughts and heat waves are reshaping farms and forests. We study how smallholder and agroforestry systems respond to these events, which practices, institutions and relationships help households keep farming, and why the burden falls unevenly across communities."
-  methods: [Remote sensing, Disturbance analysis, Agroecology, Interviews]
+  summary: "Hurricanes, droughts, fires and heat waves are reshaping forests and farms. We study how landscapes change after extreme events, how these events interact with land use and policy, and why their effects fall unevenly across places and communities."
+  methods: [Remote sensing, Disturbance analysis, Landscape ecology, Interviews]
   funding: ""
   link: ""
