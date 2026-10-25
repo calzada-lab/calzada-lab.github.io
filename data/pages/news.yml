@@ -1,6 +1,6 @@
 # Text for the News page. Edit from the admin panel (Pages → News).
-- eyebrow: News
-  title: News
-  intro: Publications, presentations, fieldwork and awards.
-  image: ''
-  sections: []
+eyebrow: News
+title: News
+intro: Publications, presentations, fieldwork and awards.
+image: ''
+sections: []

@@ -5,7 +5,7 @@
 const labels = {article:'Article', chapter:'Book chapter', book:'Book', outreach:'Outreach', report:'Report', preprint:'In preparation', talk:'Presentation'};
 const settings = items.find(i => i.bold_names) || {};
 const boldNames = (settings.bold_names || []).map(n => String(n).toLowerCase());
-const pubs = items.filter(i => i.year || i.bibtex || i.title);
+const pubs = items.filter(i => !i.bold_names && !i.eyebrow && (i.year || i.bibtex || i.title));
 
 const accents = {"'":{a:'á',e:'é',i:'í',o:'ó',u:'ú',A:'Á',E:'É',I:'Í',O:'Ó',U:'Ú'}, '~':{n:'ñ',N:'Ñ',a:'ã',o:'õ'}, '"':{u:'ü',o:'ö',a:'ä',U:'Ü'}, '`':{a:'à',e:'è',o:'ò'}, '^':{a:'â',e:'ê',o:'ô'}};
 const tex = s => String(s || '')
