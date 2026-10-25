@@ -11,9 +11,14 @@
   natgeo: "https://explorers.nationalgeographic.org/directory/leonardo-calzada"
 - name: "Your name here"
   group: open
-  role: "Graduate student"
+  role: "PhD student"
   photo: ""
-  bio: "Interested in graduate research on landscape dynamics, agrarian change or development–conservation policies? Get in touch."
+  bio: "Interested in doctoral research on landscape dynamics, agrarian change or development–conservation policies? Get in touch."
+- name: "Your name here"
+  group: open
+  role: "MS student"
+  photo: ""
+  bio: "Interested in a master's thesis using GIS, remote sensing or land system science? Get in touch."
 - name: "Your name here"
   group: open
   role: "Undergraduate researcher"
