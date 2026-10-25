@@ -4,6 +4,7 @@ project:
   resources:
     - .nojekyll
     - assets/img/
+    - assets/files/
 
 website:
   title: "Calzada Research Group"

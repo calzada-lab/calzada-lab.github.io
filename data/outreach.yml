@@ -6,9 +6,9 @@
   date: 2024-11-01
   featured: true
   description: "Outreach booklet on how development and conservation initiatives and public policies shape communities and landscapes in the Calakmul–Sian Ka'an corridor. Supported by Fulbright and the National Geographic Society."
-  image: ""
-  file: ""
-  link: "https://689a47727eca620007f77057--lecalzada.netlify.app/outreach/Natgeo_booklet.pdf"
+  image: "/assets/img/outreach/entre-selvas-y-comunidades.jpg"
+  file: "/assets/files/entre-selvas-y-comunidades.pdf"
+  link: ""
   link_label: "Read the booklet (PDF)"
 - title: "Sembrando Vida: voces y transformaciones en Calakmul–Sian Ka'an"
   type: op-ed
@@ -42,16 +42,16 @@
   date: 2018-08-01
   featured: false
   description: "Visual narrative of socio-environmental change in Nizanda through community voices and photography: development, renewable energy and cultural landscapes in the Isthmus of Tehuantepec. Ediciones Quinto Sol, UNAM."
-  image: ""
-  file: ""
-  link: "https://689a47727eca620007f77057--lecalzada.netlify.app/outreach/Nizanda_dissemination.pdf"
+  image: "/assets/img/outreach/nizanda.jpg"
+  file: "/assets/files/nizanda.pdf"
+  link: ""
   link_label: "Read (PDF)"
 - title: "Amatlán. Transformación ambiental y social en el norte de Morelos"
   type: booklet
   date: 2018-08-01
   featured: false
   description: "Photography and local storytelling on territory, identity and resistance in the face of extractive development and cultural change. Ediciones Quinto Sol, UNAM."
-  image: ""
-  file: ""
-  link: "https://689a47727eca620007f77057--lecalzada.netlify.app/outreach/Amatl%C3%A1n_dissemination.pdf"
+  image: "/assets/img/outreach/amatlan.jpg"
+  file: "/assets/files/amatlan.pdf"
+  link: ""
   link_label: "Read (PDF)"

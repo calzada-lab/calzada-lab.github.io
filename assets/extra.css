@@ -151,7 +151,7 @@ main.content { margin-bottom: 0 !important; padding-bottom: 0 !important; }
 
 /* Outreach */
 .out-feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 0; background: #fff; border: 1px solid var(--mist); border-radius: .5rem; overflow: hidden; margin-bottom: 2.4rem; }
-.out-feature .out-media { min-height: 260px; position: relative; }
+.out-feature .out-media { min-height: 320px; position: relative; background-position: center top !important; }
 .out-feature .out-body { padding: 1.8rem 2rem; display: flex; flex-direction: column; gap: .6rem; align-items: flex-start; }
 .out-feature h2 { margin: 0; }
 .out-feature p { color: var(--muted); margin: 0 0 .6rem; }
