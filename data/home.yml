@@ -1,60 +1,77 @@
-# Home page content. Edit from the admin panel (Home page) or here.
-eyebrow: "Geography & Environmental Studies · New Mexico State University"
-hero_image: ""
-headline: "Land systems, governance and *futures* in a changing environment."
-lede: "The Calzada Research Group studies how development, conservation and environmental change remake landscapes, and how the people who live in them respond. We read change from satellites and spatial models, then go to the field to understand it."
-button_primary: "Explore our research"
-button_secondary: "Join the group"
+eyebrow: Geography & Environmental Studies · New Mexico State University
+headline: Land systems, governance and *futures* in a changing environment.
+lede: The Calzada Research Group studies how development, conservation and
+  environmental change remake landscapes, and how the people who live in them
+  respond. We read change from satellites and spatial models, then go to the
+  field to understand it.
+button_primary: Explore our research
+button_secondary: Join the group
 sites:
-  - "18.6° N 89.8° W · Calakmul, Campeche"
-  - "19.8° N 87.6° W · Sian Ka'an, Quintana Roo"
-  - "41.5° N 70.7° W · New England fishing ports"
-  - "32.3° N 106.7° W · Las Cruces, NM"
-what_label: "What we do"
-what_title: "Integrating remote sensing, land system science and interdisciplinary perspectives"
-what_intro: "Landscapes record policy, markets, environmental change and everyday decisions. We connect these scales, from a 30-meter pixel to a conversation in a community assembly."
+  - 18.6° N 89.8° W · Calakmul, Campeche
+  - 19.8° N 87.6° W · Sian Ka'an, Quintana Roo
+  - 41.5° N 70.7° W · New England fishing ports
+  - 32.3° N 106.7° W · Las Cruces, NM
+what_label: What we do
+what_title: Integrating remote sensing, land system science and
+  interdisciplinary perspectives
+what_intro: Landscapes record policy, markets, environmental change and everyday
+  decisions. We connect these scales, from a 30-meter pixel to a conversation in
+  a community assembly.
 pillars:
-  - name: "Observe"
-    text: "We monitor landscape change with satellite time series, biomass estimates and disturbance histories, using open and reproducible workflows."
-  - name: "Listen"
-    text: "We examine how policies play out on the ground through fieldwork, interviews and participatory mapping, with attention to power and local perspectives."
-  - name: "Co-create"
-    text: "We co-produce knowledge with communities, agencies and students, and return results through bilingual reports, StoryMaps and open data."
-numbers_label: "Our work so far"
-numbers_title: "Research in Latin America and the US Southwest"
+  - name: Observe
+    text: We monitor landscape change with satellite time series, biomass estimates
+      and disturbance histories, using open and reproducible workflows.
+  - name: Listen
+    text: We examine how policies play out on the ground through fieldwork,
+      interviews and participatory mapping, with attention to power and local
+      perspectives.
+  - name: Co-create
+    text: We co-produce knowledge with communities, agencies and students, and
+      return results through bilingual reports, StoryMaps and open data.
+numbers_label: Our work so far
+numbers_title: Research in Latin America and the US Southwest
 stats:
   - value: "2"
     label: "countries of fieldwork: Mexico and the US"
-  - value: "10+"
-    label: "years mapping land use change and forests"
+  - value: 10+
+    label: years mapping land use change and forests
   - value: "6"
-    label: "peer-reviewed articles, plus 2 book chapters"
+    label: peer-reviewed articles, plus 2 book chapters
   - value: "6"
-    label: "technical reports and policy briefs for government agencies"
+    label: technical reports and policy briefs for government agencies
   - value: "6"
-    label: "outreach materials shared with communities: booklets, community reports and StoryMaps"
-story_label: "Our research in brief"
-story_title: "Research overview"
+    label: "outreach materials shared with communities: booklets, community reports
+      and StoryMaps"
+story_label: Our research in brief
+story_title: Research overview
 story:
-  - label: "The challenge"
-    text: "Forests and farms across Latin America and the US Southwest are changing on several fronts at once. Megaprojects like the Maya Train, conservation and agroforestry programs, and hurricanes, droughts and fires all leave their mark on the same places."
-  - label: "Our question"
-    text: "Who decides what happens to a landscape, and who carries the consequences? When development, conservation and extreme events overlap, how do forests, farming systems and communities respond?"
-  - label: "Our approach"
-    text: "We combine decades of satellite imagery and spatial models, which show what changed and where, with fieldwork, interviews and participatory mapping, which explain why and for whom."
-  - label: "Why it matters"
-    text: "Environmental policy works on real places and real people. We share our findings in formats that communities, agencies and students can use."
-video: ""
-research_label: "Research"
-research_title: "Research areas"
-research_intro: "Our work is organized around four research areas that share a central question: how do decisions about land, made at different scales, shape landscapes and livelihoods?"
-news_label: "From the group"
-news_title: "News"
-news_link: "All news →"
-funders_label: "Supported by"
+  - label: The challenge
+    text: Forests and farms across Latin America and the US Southwest are changing
+      on several fronts at once. Megaprojects like the Maya Train, conservation
+      and agroforestry programs, and hurricanes, droughts and fires all leave
+      their mark on the same places.
+  - label: Our question
+    text: Who decides what happens to a landscape, and who carries the consequences?
+      When development, conservation and extreme events overlap, how do forests,
+      farming systems and communities respond?
+  - label: Our approach
+    text: We combine decades of satellite imagery and spatial models, which show
+      what changed and where, with fieldwork, interviews and participatory
+      mapping, which explain why and for whom.
+  - label: Why it matters
+    text: Environmental policy works on real places and real people. We share our
+      findings in formats that communities, agencies and students can use.
+research_label: Research
+research_title: Research areas
+research_intro: "Our work is organized around four research areas that share a
+  central question: how do decisions about land, made at different scales, shape
+  landscapes and livelihoods?"
+news_label: From the group
+news_title: News
+news_link: All news →
+funders_label: Supported by
 funders:
-  - "National Geographic Society"
-  - "Fulbright–García Robles"
-  - "NOAA Sea Grant"
-  - "SECIHTI (formerly CONACYT)"
-  - "NJ Wind Institute"
+  - National Geographic Society
+  - Fulbright–García Robles
+  - SECIHTI (formerly CONACYT)
+  - NJ Wind Institute
