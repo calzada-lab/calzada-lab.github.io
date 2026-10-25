@@ -12,16 +12,11 @@
   natgeo: "https://explorers.nationalgeographic.org/directory/leonardo-calzada"
 - name: "Your name here"
   group: open
-  role: "PhD student"
+  role: "Graduate student"
   photo: ""
-  bio: "Doctoral positions on land change in Latin America and the US Southwest."
-- name: "Your name here"
-  group: open
-  role: "MS student"
-  photo: ""
-  bio: "Master's positions in GIS, remote sensing and land system science."
+  bio: "Interested in graduate research on land change in Latin America or the US Southwest? Get in touch."
 - name: "Your name here"
   group: open
   role: "Undergraduate researcher"
   photo: ""
-  bio: "Paid and for-credit research positions for NMSU undergraduates."
+  bio: "NMSU undergraduates interested in GIS and remote sensing are welcome to reach out."
