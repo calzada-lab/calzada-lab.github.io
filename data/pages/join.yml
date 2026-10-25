@@ -1,33 +1,44 @@
-# Text for the Join page. Edit from the admin panel (Pages → Join).
 eyebrow: Join us
 title: Join the group
-intro: We are looking for curious students and collaborators who want to understand how landscapes change, why, and who is affected.
-image: ''
+intro: We are looking for curious students and collaborators who want to
+  understand how landscapes change, why, and who is affected.
 sections:
-- style: plain
-  label: Our values
-  title: Principles
-  intro: ''
-  body: ''
-  items:
-  - name: Welcome
-    text: We make space for different backgrounds, languages and ways of knowing. Spanish and English are both group languages.
-  - name: Openness
-    text: 'We work in the open: shared code, documented workflows and data that others can reuse.'
-  - name: Reciprocity
-    text: Research should give back. We return results to the communities we work with, in formats they can use.
-- style: alt
-  label: Openings
-  title: Prospective students
-  intro: ''
-  items: []
-  body: |-
-    **Graduate students.** Prospective graduate students interested in land change, forests and governance in Latin America and the US Southwest are welcome to get in touch. Information on degree programs and admissions is available from the [Department of Geography and Environmental Studies](https://geography.nmsu.edu/).
+  - style: plain
+    label: Our values
+    title: Principles
+    items:
+      - name: Welcome
+        text: We make space for different backgrounds, languages and ways of knowing.
+          Spanish and English are both group languages.
+      - name: Openness
+        text: "We work in the open: shared code, documented workflows and data that
+          others can reuse."
+      - name: Reciprocity
+        text: Research should give back. We return results to the communities we work
+          with, in formats they can use.
+  - style: alt
+    label: Openings
+    title: Prospective students
+    body: >-
+      **Graduate students.** Prospective graduate students interested in land
+      change, forests and governance in Latin America and the US Southwest are
+      welcome to get in touch. Information on degree programs and admissions is
+      available from the [Department of Geography and Environmental
+      Studies](https://geography.nmsu.edu/).
 
-    **Undergraduates.** NMSU students from any major who are interested in GIS, remote sensing or data visualization are welcome to reach out about research opportunities.
 
-    **Postdocs and visiting scholars.** We welcome inquiries from researchers interested in developing fellowship applications with the group.
+      **Undergraduates.** NMSU students from any major who are interested in
+      Landscape Ecology, GIS, remote sensing or data visualization are welcome
+      to reach out about research opportunities.
 
-    ### How to get in touch
 
-    Send an email to lcalzada@nmsu.edu with the subject "Prospective student", a short note on your interests, and your CV. We can discuss current opportunities and funding by email. Writing in Spanish is welcome.
+      **Postdocs and visiting scholars.** We welcome inquiries from researchers
+      interested in developing fellowship applications with the group.
+
+
+      ### How to get in touch
+
+
+      Send an email to **lcalzada@nmsu.edu** with the subject "Prospective
+      student", a short note on your interests, and your CV. We can discuss
+      current opportunities and funding by email. Writing in Spanish is welcome.
