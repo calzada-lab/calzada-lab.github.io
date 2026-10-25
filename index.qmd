@@ -7,6 +7,9 @@ listing:
   - id: hero
     contents: data/home.yml
     template: _templates/hero.ejs
+  - id: intro
+    contents: data/home.yml
+    template: _templates/home-intro.ejs
   - id: research-head
     contents: data/home.yml
     template: _templates/band-open.ejs
@@ -21,7 +24,7 @@ listing:
   - id: latest
     contents: news/*.qmd
     sort: "date desc"
-    max-items: 4
+    max-items: 3
     template: _templates/news.ejs
     template-params: { filter: false }
     date-format: "MMM D, YYYY"
@@ -36,20 +39,6 @@ listing:
 
 ::: {#hero}
 :::
-
-::: {#research-head}
-:::
-
-```{=html}
-<section class="band band-body alt"><div class="wrap">
-```
-
-::: {#themes}
-:::
-
-```{=html}
-</div></section>
-```
 
 ::: {#news-head}
 :::
@@ -67,6 +56,23 @@ listing:
 
 ::: {#news-tail}
 :::
+
+::: {#intro}
+:::
+
+::: {#research-head}
+:::
+
+```{=html}
+<section class="band band-body alt"><div class="wrap">
+```
+
+::: {#themes}
+:::
+
+```{=html}
+</div></section>
+```
 
 ::: {#funders}
 :::

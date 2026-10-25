@@ -12,42 +12,4 @@
     <div class="sites"><% for (const s of (h.sites || [])) { %><span><%= s %></span><% } %></div>
   </div>
 </section>
-
-<section class="band">
-  <div class="wrap">
-    <div class="section-label"><%= h.what_label %></div>
-    <h2><%= h.what_title %></h2>
-    <p class="intro"><%= h.what_intro %></p>
-    <div class="pillars">
-    <% for (const p of (h.pillars || [])) { %>
-      <div class="pillar"><h3><%= p.name %><span>.</span></h3><p><%= p.text %></p></div>
-    <% } %>
-    </div>
-  </div>
-</section>
-
-<section class="band dark">
-  <div class="wrap">
-    <div class="section-label"><%= h.numbers_label %></div>
-    <h2><%= h.numbers_title %></h2>
-    <div class="stats">
-    <% for (const s of (h.stats || [])) { %>
-      <div class="stat"><b><%= s.value %></b><span><%= s.label %></span></div>
-    <% } %>
-    </div>
-  </div>
-</section>
-
-<section class="band story">
-  <div class="wrap">
-    <div class="section-label"><%= h.story_label %></div>
-    <h2><%= h.story_title %></h2>
-    <% if (h.video) { %><div class="video"><iframe src="<%= h.video %>" title="<%= h.story_title %>" loading="lazy" allowfullscreen></iframe></div><% } %>
-    <ol class="beats">
-    <% for (const b of (h.story || [])) { %>
-      <li><span class="beat-label"><%= b.label %></span><p><%= b.text %></p></li>
-    <% } %>
-    </ol>
-  </div>
-</section>
 ```
