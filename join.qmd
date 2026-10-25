@@ -1,0 +1,19 @@
+---
+title: "Join us"
+page-layout: full
+# Page text lives in data/pages/join.yml (admin panel: Pages → Join us).
+listing:
+  - id: head
+    contents: data/pages/join.yml
+    template: _templates/page-head.ejs
+
+  - id: sections
+    contents: data/pages/join.yml
+    template: _templates/sections.ejs
+---
+
+::: {#head}
+:::
+
+::: {#sections}
+:::

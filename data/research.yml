@@ -1,0 +1,29 @@
+# Research themes. Each item becomes a card on Research and Home.
+- title: "State-led development and conservation in the Maya Forest"
+  tag: "Calakmul–Sian Ka'an Corridor, MX"
+  color: "#8C0B42"
+  summary: "How do the Maya Train and the Sembrando Vida agroforestry program change forest degradation and local governance? We combine biomass time series with interviews to follow institutional bricolage across ejidos."
+  methods: [Remote sensing, Land system science, Mixed methods]
+  funding: "National Geographic Society · Fulbright–García Robles"
+  link: "https://doi.org/10.1007/s10113-025-02458-x"
+- title: "Disturbance and biomass in tropical seasonal forests"
+  tag: "Southern Yucatán, MX"
+  color: "#23785A"
+  summary: "Hurricanes, fire and land use overlap in the southern Yucatán. We model how these disturbances interact to produce heterogeneous biomass trends across the forest."
+  methods: [Time series, Spatial modeling, Google Earth Engine]
+  funding: "Rutgers Department of Geography"
+  link: "https://doi.org/10.2139/ssrn.5655753"
+- title: "Fishing communities and ocean change"
+  tag: "Northeast US coast"
+  color: "#0E3330"
+  summary: "We map the economic and cultural ties that fishing communities have to offshore places, and build vulnerability indices so that these communities have a stronger voice in ocean management and offshore wind planning."
+  methods: [Participatory mapping, Vulnerability indices, GIS]
+  funding: "NOAA · NJ Sea Grant · Northeast Fisheries Science Center"
+  link: "https://doi.org/10.1093/icesjms/fsae139"
+- title: "Agroecology and extreme environmental events"
+  tag: "Mexico & US Southwest"
+  color: "#5E0A2E"
+  summary: "Hurricanes, droughts and heat waves are reshaping farms and forests. We study how smallholder and agroforestry systems respond to these events, which practices, institutions and relationships help households keep farming, and why the burden falls unevenly across communities."
+  methods: [Remote sensing, Disturbance analysis, Agroecology, Interviews]
+  funding: ""
+  link: ""

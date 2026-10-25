@@ -1,0 +1,32 @@
+---
+title: "People"
+page-layout: full
+# Page text lives in data/pages/people.yml (admin panel: Pages → People).
+listing:
+  - id: head
+    contents: data/pages/people.yml
+    template: _templates/page-head.ejs
+  - id: people
+    contents: data/people.yml
+    template: _templates/people.ejs
+  - id: sections
+    contents: data/pages/people.yml
+    template: _templates/sections.ejs
+---
+
+::: {#head}
+:::
+
+```{=html}
+<section class="band"><div class="wrap">
+```
+
+::: {#people}
+:::
+
+```{=html}
+</div></section>
+```
+
+::: {#sections}
+:::

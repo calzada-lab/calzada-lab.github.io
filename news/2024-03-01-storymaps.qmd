@@ -1,0 +1,11 @@
+---
+title: "Two StoryMaps from the Maya Forest"
+date: 2024-03-01
+description: "Bilingual StoryMaps share what we learned in the Calakmul–Sian Ka'an corridor with the communities who taught us."
+categories: [outreach]
+---
+
+As part of our Fulbright–National Geographic project we published two StoryMaps:
+
+- [*There is a train across the jungle*](https://arcg.is/1zj81z1): voices and visions on the Maya Train, Sembrando Vida and the future of the Maya Forest.
+- [*El susurro de los árboles*](https://arcg.is/10vTeP2): forest degradation and regeneration in the Calakmul–Sian Ka'an corridor.

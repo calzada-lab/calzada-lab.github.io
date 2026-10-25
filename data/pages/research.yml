@@ -1,0 +1,18 @@
+# Text for the Research page. Edit from the admin panel (Pages → Research).
+- eyebrow: Research
+  title: Research
+  intro: The group studies land change from a land system science perspective. Our projects combine remote sensing and spatial modeling with fieldwork, participatory methods and long-term collaboration with communities, drawing on geography, ecology and the social sciences.
+  image: ''
+  sections:
+  - style: alt
+    label: Approach
+    title: A mixed-methods approach
+    intro: Our research integrates quantitative and qualitative methods to explain both the patterns of land change and the social processes that produce them.
+    body: ''
+    items:
+    - name: Remote sensing and spatial analysis
+      text: Multi-decadal Landsat and Sentinel time series, biomass and disturbance mapping in Google Earth Engine, and land change modeling with Dinamica EGO and TerrSet.
+    - name: Qualitative and participatory research
+      text: Semi-structured interviews, community assemblies, participatory mapping and social network analysis (UCINET, Atlas.ti), informed by political ecology and critical agrarian studies.
+    - name: Integration and open science
+      text: We triangulate spatial and qualitative evidence across scales and document our workflows in R, Python, Quarto and GitHub to support transparency and reproducibility.

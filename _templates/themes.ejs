@@ -1,0 +1,15 @@
+```{=html}
+<div class="themes">
+<% for (const t of items) { %>
+  <article class="theme">
+    <div class="swatch<%= t.image ? ' photo' : '' %>" style="<% if (t.image) { %>background: url('<%= String(t.image).replace(/^\//, '') %>') center / cover;<% } else { %>background: linear-gradient(135deg, <%= t.color || '#8C0B42' %>, #0E3330);<% } %>"><span class="tag"><%= t.tag %></span></div>
+    <div class="body">
+      <h3><%= t.title %></h3>
+      <p><%= t.summary %></p>
+      <div class="chips"><% for (const m of (t.methods || [])) { %><span class="chip"><%= m %></span><% } %></div>
+      <div class="meta"><% if (t.funding) { %><b>Funding</b> · <%= t.funding %><% } %><% if (t.link) { %><br><a href="<%= t.link %>">Key paper →</a><% } %></div>
+    </div>
+  </article>
+<% } %>
+</div>
+```

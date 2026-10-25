@@ -1,0 +1,10 @@
+---
+title: "The group opens at New Mexico State University"
+date: 2026-08-17
+description: "Leo joins the Department of Geography and Environmental Studies as Assistant Professor, and the Calzada Research Group is officially launched."
+categories: [group]
+---
+
+This fall Leonardo Calzada joined the Department of Geography and Environmental Studies at New Mexico State University as Assistant Professor, and the Calzada Research Group started its work in Breland Hall.
+
+Our first semester includes **GEOG 452/552 Landscape Ecology**, new collaborations in the Chihuahuan Desert, and continuing fieldwork in the Maya Forest. We are recruiting graduate and undergraduate students. See [Join us](../join.qmd).

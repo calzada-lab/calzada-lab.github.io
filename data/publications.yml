@@ -1,0 +1,93 @@
+# Publications. Paste a BibTeX entry in `bibtex`, or type the fields by hand.
+# type: article | chapter | book | outreach | report | preprint | talk (optional with BibTeX)
+# Group members listed in data/pages/publications.yml (bold_names) are bolded automatically.
+- type: article
+  bibtex: |
+    @article{calzada2025local,
+      title = {Local Perspectives and Institutional Bricolage Around Conservation and Development: {Sembrando Vida} and the {Maya Train} in the Southern {Yucat\'an} Peninsula},
+      author = {Calzada, Leonardo and Schneider, Laura C. and Figueroa, Fernanda},
+      journal = {Regional Environmental Change},
+      volume = {25},
+      number = {4},
+      pages = {1--17},
+      year = {2025},
+      doi = {10.1007/s10113-025-02458-x}
+    }
+- year: 2025
+  type: preprint
+  title: "Disturbance interactions shape heterogeneous biomass trends in the southern Yucatán tropical seasonal forest"
+  authors: "**Calzada, L.**, & Schneider, L. C."
+  venue: "In preparation for International Journal of Applied Earth Observation and Geoinformation"
+  link: "https://doi.org/10.2139/ssrn.5655753"
+- year: 2024
+  type: article
+  title: "Using historical catch flexibility and fishing ground mobility as measures of the adaptive capacity of fishing communities to future ocean change"
+  authors: "Selden, R. L., Kitchel, Z. J., Coleman, K. E., **Calzada, L.**, & St. Martin, K."
+  venue: "ICES Journal of Marine Science, 81(10), 1972–1987"
+  link: "https://doi.org/10.1093/icesjms/fsae139"
+- year: 2024
+  type: outreach
+  title: "Yaan Jump'éel Tsímin K'áak Iche' K'áaxo · There is a train across the jungle: voices and visions on the Maya Train, Sembrando Vida, and the future of the Maya Forest"
+  authors: "**Calzada, L.**"
+  venue: "ArcGIS StoryMap"
+  link: "https://arcg.is/1zj81z1"
+- year: 2024
+  type: outreach
+  title: "El susurro de los árboles: degradación y regeneración de los bosques en el Corredor Calakmul–Sian Ka'an"
+  authors: "**Calzada, L.**"
+  venue: "ArcGIS StoryMap"
+  link: "https://arcg.is/10vTeP2"
+- year: 2024
+  type: outreach
+  title: "Entre selvas y comunidades: políticas públicas, desarrollo y dinámicas forestales en los territorios del Corredor Calakmul–Sian Ka'an"
+  authors: "**Calzada, L.**, Schneider, L. C., Peña, A., Monroy, C., Figueroa, F., Mendoza, R. P., Haenn, N., Villalobos, M., & Benítez, M."
+  venue: "Community report. Funded by Fulbright–COMEXUS and the National Geographic Society"
+  link: ""
+- year: 2024
+  type: report
+  title: "Scientific dossier on genetically modified corn and its effects"
+  authors: "Bermúdez, G. E., **Calzada, L.**, Cerritos, F. R., et al."
+  venue: "CONAHCYT, Gobierno de México"
+  link: "https://usrtk.org/wp-content/uploads/2024/11/DOSSIER-MAIZ-2024-ENGfinal-5.pdf"
+- year: 2020
+  type: article
+  title: "Integrating pattern-based modelling and political ecology in land-use change research: the case of Mexican dry tropics"
+  authors: "Figueroa, F., **Calzada, L.**, & Meave, J. A."
+  venue: "Journal of Land Use Science, 15(2–3), 252–269"
+  link: "https://doi.org/10.1080/1747423x.2019.1681527"
+- year: 2019
+  type: chapter
+  title: "Gobernanza del manejo de los recursos forestales en México"
+  authors: "Figueroa, F., & **Calzada, L.**"
+  venue: "In Sistemas socio-ecológicos: marcos analíticos y estudios de caso en Oaxaca, México (pp. 205–226). IIEc-UNAM"
+  link: "https://doi.org/10.22201/iiec.9786073013109e.2019"
+- year: 2018
+  type: article
+  title: "Lands at risk: land use/land cover change in two contrasting tropical dry regions of Mexico"
+  authors: "**Calzada, L.**, Meave, J. A., Bonfil, C., & Figueroa, F."
+  venue: "Applied Geography, 99, 22–30"
+  link: "https://doi.org/10.1016/j.apgeog.2018.07.021"
+- year: 2018
+  type: article
+  title: "Beef or grasshopper hamburgers: the ecological implications of choosing one over the other"
+  authors: "Wegier, A., Alavez, V., Pérez-López, J., **Calzada, L.**, & Cerritos, R."
+  venue: "Basic and Applied Ecology, 26, 89–100"
+  link: "https://www.sciencedirect.com/science/article/pii/S1439179117300324"
+- year: 2018
+  type: outreach
+  title: "Nizanda. Transformación ambiental y social en el Istmo oaxaqueño"
+  authors: "Figueroa, F., Meave, J. A., Pérez-García, E., **Calzada, L.**, Rangel, V., & García-Sevilla, C."
+  venue: "Ediciones Quinto Sol, UNAM"
+  link: ""
+- year: 2017
+  type: chapter
+  title: "Prácticas agrícolas y conservación de la agrobiodiversidad en Amatlán de Quetzalcóatl"
+  authors: "Puente Uribe, B., **Calzada, L.**, Bonfil, C., & Figueroa, F."
+  venue: "In La biodiversidad en Morelos: Estudio de estado 2, Vol. III (pp. 428–433). CONABIO"
+  link: "https://doi.org/10.5962/bhl.title.118977"
+- year: 2014
+  type: article
+  title: "Estudios transdisciplinarios en socio-ecosistemas: reflexiones teóricas y su aplicación en contextos latinoamericanos"
+  authors: "Ortega, T., Mastrangelo, M., Villarroel, D., … **Calzada, L.**, et al."
+  venue: "Investigación Ambiental, Ciencia y Política Pública"
+  link: "https://ri.conicet.gov.ar/handle/11336/43261"

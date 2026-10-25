@@ -1,0 +1,6 @@
+```{=html}
+<% const h = items[0]; const k = templateParams.key; %>
+<section class="band band-tail <%= templateParams.style || '' %>"><div class="wrap">
+<% if (h[k + '_link']) { %><p><a href="<%= templateParams.href %>"><%= h[k + '_link'] %></a></p><% } %>
+</div></section>
+```

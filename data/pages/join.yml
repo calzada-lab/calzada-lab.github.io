@@ -1,0 +1,33 @@
+# Text for the Join page. Edit from the admin panel (Pages → Join).
+- eyebrow: Join us
+  title: Join the group
+  intro: We are looking for curious students and collaborators who want to understand how landscapes change, why, and who is affected.
+  image: ''
+  sections:
+  - style: plain
+    label: Our values
+    title: Principles
+    intro: ''
+    body: ''
+    items:
+    - name: Welcome
+      text: We make space for different backgrounds, languages and ways of knowing. Spanish and English are both group languages.
+    - name: Openness
+      text: 'We work in the open: shared code, documented workflows and data that others can reuse.'
+    - name: Reciprocity
+      text: Research should give back. We return results to the communities we work with, in formats they can use.
+  - style: alt
+    label: Openings
+    title: Prospective students
+    intro: ''
+    items: []
+    body: |-
+      **PhD and MS students.** We are recruiting graduate students through the [Department of Geography and Environmental Studies](https://geography.nmsu.edu/) for projects on land change, forests and governance in Latin America and the US Southwest. Funding is available through teaching and research assistantships.
+
+      **Undergraduates.** Research positions in GIS, remote sensing and data visualization are open to NMSU students from any major.
+
+      **Postdocs and visiting scholars.** We are happy to support fellowship applications (NSF, Fulbright, CONAHCYT and others).
+
+      ### How to get in touch
+
+      Send an email to lcalzada@nmsu.edu with the subject "Prospective student", a short note on your interests, and your CV. Writing in Spanish is welcome.

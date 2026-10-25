@@ -1,0 +1,8 @@
+```{=html}
+<% const h = items[0]; %>
+<header class="page-head<%= h.image ? ' has-image' : '' %>"<% if (h.image) { %> style="background-image: linear-gradient(rgba(14,51,48,.82), rgba(14,51,48,.82)), url('<%= String(h.image).replace(/^\//, '') %>');"<% } %>><div class="wrap">
+<div class="eyebrow"><%= h.eyebrow %></div>
+<h1><%= h.title %></h1>
+<% if (h.intro) { %><p><%= h.intro %></p><% } %>
+</div></header>
+```
