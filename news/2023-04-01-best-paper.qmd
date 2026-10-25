@@ -5,4 +5,4 @@ description: "Recognition from the Biogeography Specialty Group of the American 
 categories: [award]
 ---
 
-Leo received the **Best Student Paper Award** from the Biogeography Specialty Group of the American Association of Geographers for work on forest degradation patterns and Sembrando Vida in the Calakmul–Sian Ka'an corridor.
+Leonardo Calzada received the **Best Student Paper Award** from the Biogeography Specialty Group of the American Association of Geographers for work on forest degradation patterns and Sembrando Vida in the Calakmul–Sian Ka'an corridor.

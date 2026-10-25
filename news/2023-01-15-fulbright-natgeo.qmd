@@ -5,4 +5,4 @@ description: "Support for a year of fieldwork on forests and development in the 
 categories: [award]
 ---
 
-Leo was named a **Fulbright–National Geographic** and **Fulbright–García Robles** fellow for 2023–2024, supporting a year of fieldwork with communities in the Calakmul–Sian Ka'an Biological Corridor.
+Leonardo Calzada was named a **Fulbright–National Geographic** and **Fulbright–García Robles** fellow for 2023–2024, supporting a year of fieldwork with communities in the Calakmul–Sian Ka'an Biological Corridor.

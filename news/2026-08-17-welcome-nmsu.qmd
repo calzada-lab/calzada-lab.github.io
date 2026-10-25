@@ -1,7 +1,7 @@
 ---
 title: "The group opens at New Mexico State University"
 date: 2026-08-17
-description: "Leo joins the Department of Geography and Environmental Studies as Assistant Professor, and the Calzada Research Group is officially launched."
+description: "Leonardo Calzada joins the Department of Geography and Environmental Studies as Assistant Professor, and the Calzada Research Group is officially launched."
 categories: [group]
 ---
 
