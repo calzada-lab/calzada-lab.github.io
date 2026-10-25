@@ -2,7 +2,7 @@
 <%
 // Each publication can be typed in by hand (title, authors, venue...) or pasted as BibTeX.
 // Fields typed by hand win over the BibTeX.
-const labels = {article:'Article', chapter:'Book chapter', book:'Book', outreach:'Outreach', report:'Report', preprint:'In preparation', talk:'Presentation'};
+const labels = {article:'Articles', chapter:'Book chapters', book:'Books', outreach:'Outreach', report:'Reports', preprint:'In preparation', talk:'Presentations'};
 const settings = items.find(i => i.bold_names) || {};
 const boldNames = (settings.bold_names || []).map(n => String(n).toLowerCase());
 const pubs = items.filter(i => !i.bold_names && !i.eyebrow && (i.year || i.bibtex || i.title));
@@ -56,15 +56,17 @@ function normalize(p) {
   };
 }
 const bold = s => String(s || '').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-const sorted = pubs.map(normalize).sort((a,b) => (b.year||0) - (a.year||0));
+const sortedAll = pubs.map(normalize).sort((a,b) => (b.year||0) - (a.year||0));
+const sorted = sortedAll;
+const initial = sorted.some(i => i.type === 'article') ? 'article' : 'all';
 %>
 <div class="pub-filter" role="group" aria-label="Filter by type">
-  <button type="button" data-f="all" aria-pressed="true">All</button>
-  <% for (const k of Object.keys(labels)) { if (!sorted.some(i => i.type === k)) continue; %><button type="button" data-f="<%= k %>" aria-pressed="false"><%= labels[k] %></button><% } %>
+  <% for (const k of Object.keys(labels)) { if (!sorted.some(i => i.type === k)) continue; %><button type="button" data-f="<%= k %>" aria-pressed="<%= k === initial %>"><%= labels[k] %></button><% } %>
+  <button type="button" data-f="all" aria-pressed="<%= initial === 'all' %>">All</button>
 </div>
 <ul class="pubs">
 <% for (const p of sorted) { %>
-  <li class="pub" data-type="<%= p.type %>">
+  <li class="pub" data-type="<%= p.type %>"<%= (initial !== 'all' && p.type !== initial) ? ' hidden' : '' %>>
     <div class="yr"><%= p.year %></div>
     <div>
       <div class="badge-type"><%= labels[p.type] || p.type %></div>

@@ -52,7 +52,7 @@ content:
       - name: type
         label: Type
         type: select
-        options: { values: [booklet, storymap, workshop, op-ed, media, video, podcast, exhibit, report] }
+        options: { values: [booklet, storymap, workshop, press, media, video, podcast, exhibit, report] }
       - { name: date, label: Date, type: date }
       - { name: featured, label: Feature at the top of the page, type: boolean }
       - { name: description, label: Description, type: text }

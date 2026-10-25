@@ -1,4 +1,4 @@
-# Outreach and dissemination: booklets, StoryMaps, workshops, op-eds, media.
+# Outreach and dissemination: booklets, StoryMaps, workshops, columns and press notes, media.
 # featured: true shows the item as the large card at the top of the Outreach page.
 # Upload a PDF with `file`, or paste a link in `link`.
 - title: "Entre selvas y comunidades"
@@ -11,7 +11,7 @@
   link: ""
   link_label: "Read the booklet (PDF)"
 - title: "Sembrando Vida: voces y transformaciones en Calakmul–Sian Ka'an"
-  type: op-ed
+  type: press
   date: 2024-10-06
   featured: false
   description: "Opinion column in Pie de Página on how Sembrando Vida, aimed at rural poverty and environmental degradation, runs into the challenges of land redistribution and community participation shaped by historical inequalities."

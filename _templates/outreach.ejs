@@ -1,7 +1,7 @@
 ```{=html}
 <%
-const labels = {booklet:'Booklet', storymap:'StoryMap', workshop:'Workshop', 'op-ed':'Op-ed', media:'Media', video:'Video', podcast:'Podcast', exhibit:'Exhibit', report:'Community report'};
-const tone = {booklet:'#8C0B42', storymap:'#23785A', workshop:'#0E3330', 'op-ed':'#5E0A2E', media:'#2F4A63', video:'#2F4A63', podcast:'#2F4A63', exhibit:'#A35A2A', report:'#8C0B42'};
+const labels = {booklet:'Booklet', storymap:'StoryMap', workshop:'Workshop', press:'Columns & press', media:'Media', video:'Video', podcast:'Podcast', exhibit:'Exhibit', report:'Community report'};
+const tone = {booklet:'#8C0B42', storymap:'#23785A', workshop:'#0E3330', press:'#5E0A2E', media:'#2F4A63', video:'#2F4A63', podcast:'#2F4A63', exhibit:'#A35A2A', report:'#8C0B42'};
 const src = s => String(s || '').replace(/^\//, '');
 const yearOf = d => String(d || '').slice(0, 4);
 const fmt = d => { const t = new Date(d); return isNaN(t) ? String(d || '') : t.toLocaleDateString('en-US', {year: 'numeric', month: 'short', timeZone: 'UTC'}); };

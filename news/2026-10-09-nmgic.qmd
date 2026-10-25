@@ -1,0 +1,10 @@
+---
+title: "Talk at the NMGIC Fall Meeting 2026"
+date: 2026-10-09
+description: "Landscape change in open moments: development, conservation and local futures in the southern Yucatán. Doña Ana County Government Center, Las Cruces."
+categories: [talk]
+---
+
+Leonardo Calzada spoke at the New Mexico Geographic Information Council (NMGIC) Fall Meeting 2026, *Beyond the Map: Scaling Geospatial Solutions*, held at the Doña Ana County Government Center in Las Cruces.
+
+His talk, **"Landscape change in open moments: development, conservation, and local futures in the southern Yucatán,"** drew on the group's work combining remote sensing, spatial analysis and community-based research in Mexico's tropical forests.
