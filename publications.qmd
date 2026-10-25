@@ -1,0 +1,32 @@
+---
+title: "Publications"
+page-layout: full
+# Page text lives in data/pages/publications.yml (admin panel: Pages → Publications).
+listing:
+  - id: head
+    contents: data/pages/publications.yml
+    template: _templates/page-head.ejs
+  - id: pubs
+    contents: [data/publications.yml, data/pages/publications.yml]
+    template: _templates/pubs.ejs
+  - id: sections
+    contents: data/pages/publications.yml
+    template: _templates/sections.ejs
+---
+
+::: {#head}
+:::
+
+```{=html}
+<section class="band"><div class="wrap">
+```
+
+::: {#pubs}
+:::
+
+```{=html}
+</div></section>
+```
+
+::: {#sections}
+:::

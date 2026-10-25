@@ -1,0 +1,28 @@
+```{=html}
+<%
+const labels = {group:'Group', publication:'Publication', talk:'Talk', fieldwork:'Fieldwork', award:'Award', outreach:'Outreach', people:'People', funding:'Funding'};
+const cats = [...new Set(items.flatMap(n => n.categories || []))];
+%>
+<% if (templateParams && templateParams.filter && cats.length > 1) { %>
+<div class="pub-filter" role="group" aria-label="Filter news">
+  <button type="button" data-f="all" aria-pressed="true">All</button>
+  <% for (const c of cats) { %><button type="button" data-f="<%= c %>" aria-pressed="false"><%= labels[c] || c %></button><% } %>
+</div>
+<% } %>
+<div class="news-list">
+<% for (const n of items) { %>
+  <div class="news-item<%= n.image ? ' with-image' : '' %>" data-cats="<%= (n.categories || []).join(' ') %>">
+    <time><%= n.date %></time>
+    <div><% if (n.image) { %><img class="news-thumb" src="<%= n.image %>" alt=""><% } %><% for (const c of (n.categories || [])) { %><span class="news-cat"><%= labels[c] || c %></span><% } %><a href="<%= n.path %>"><%= n.title %></a><% if (n.description) { %><p><%= n.description %></p><% } %></div>
+  </div>
+<% } %>
+</div>
+<% if (templateParams && templateParams.filter) { %>
+<script>
+document.querySelectorAll('.pub-filter button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.pub-filter button').forEach(x => x.setAttribute('aria-pressed', x === b));
+  document.querySelectorAll('.news-item').forEach(li => li.hidden = !(b.dataset.f === 'all' || li.dataset.cats.split(' ').includes(b.dataset.f)));
+}));
+</script>
+<% } %>
+```

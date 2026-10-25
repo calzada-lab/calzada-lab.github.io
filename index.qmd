@@ -1,0 +1,72 @@
+---
+title: "Calzada Research Group"
+pagetitle: "Calzada Research Group · Land system science at NMSU"
+page-layout: full
+# All text on this page lives in data/home.yml (admin panel: Home page).
+listing:
+  - id: hero
+    contents: data/home.yml
+    template: _templates/hero.ejs
+  - id: research-head
+    contents: data/home.yml
+    template: _templates/band-open.ejs
+    template-params: { key: research, style: alt }
+  - id: themes
+    contents: data/research.yml
+    template: _templates/themes.ejs
+  - id: news-head
+    contents: data/home.yml
+    template: _templates/band-open.ejs
+    template-params: { key: news }
+  - id: latest
+    contents: news/*.qmd
+    sort: "date desc"
+    max-items: 4
+    template: _templates/news.ejs
+    template-params: { filter: false }
+    date-format: "MMM D, YYYY"
+  - id: news-tail
+    contents: data/home.yml
+    template: _templates/band-close.ejs
+    template-params: { key: news, href: news.html }
+  - id: funders
+    contents: data/home.yml
+    template: _templates/funders.ejs
+---
+
+::: {#hero}
+:::
+
+::: {#research-head}
+:::
+
+```{=html}
+<section class="band band-body alt"><div class="wrap">
+```
+
+::: {#themes}
+:::
+
+```{=html}
+</div></section>
+```
+
+::: {#news-head}
+:::
+
+```{=html}
+<section class="band band-body"><div class="wrap">
+```
+
+::: {#latest}
+:::
+
+```{=html}
+</div></section>
+```
+
+::: {#news-tail}
+:::
+
+::: {#funders}
+:::

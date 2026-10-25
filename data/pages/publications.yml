@@ -1,0 +1,13 @@
+# Text for the Publications page. Edit from the admin panel (Pages → Publications).
+- eyebrow: Publications
+  title: Publications
+  intro: Peer-reviewed articles, book chapters, technical reports and science communication products. Group members in bold.
+  image: ''
+  bold_names: [Calzada]
+  sections:
+  - style: plain
+    label: ''
+    title: ''
+    intro: ''
+    body: Full record on [ORCID](https://orcid.org/0000-0003-1071-8430).
+    items: []

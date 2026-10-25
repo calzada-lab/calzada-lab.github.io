@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - .nojekyll
+    - assets/img/
+
+website:
+  title: "Calzada Research Group"
+  description: "Land systems, forests and the people who live with them. A research group in the Department of Geography and Environmental Studies at New Mexico State University."
+  site-url: "https://leocalzada.github.io/calzada-lab"
+  favicon: assets/img/favicon.svg
+  page-navigation: false
+  navbar:
+    logo: assets/img/logo.svg
+    logo-alt: "Calzada Research Group"
+    title: "Calzada Research Group"
+    right:
+      - text: Research
+        href: research.qmd
+      - text: People
+        href: people.qmd
+      - text: Publications
+        href: publications.qmd
+      - text: News
+        href: news.qmd
+      - text: Join us
+        href: join.qmd
+      - icon: github
+        href: https://github.com/leocalzada
+        aria-label: GitHub
+  page-footer:
+    left: |
+      **Calzada Research Group** · Department of Geography and Environmental Studies<br>
+      New Mexico State University · Breland Hall 143 · Las Cruces, NM 88003
+    center: |
+      lcalzada@nmsu.edu<br>
+      <span class="coords">32.28° N, 106.75° W</span>
+    right: |
+      Content licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)<br>
+      Built with [Quarto](https://quarto.org/)
+
+format:
+  html:
+    theme:
+      light: [cosmo, assets/lab.scss]
+    css: assets/extra.css
+    toc: false
+    smooth-scroll: true
+    include-after-body: _templates/contours.html
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
