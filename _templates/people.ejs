@@ -1,0 +1,39 @@
+```{=html}
+<%
+const initials = n => n.split(/\s+/).filter(Boolean).slice(0,2).map(w => w[0]).join('').toUpperCase();
+const pis = items.filter(p => p.group === 'pi');
+const groups = [['student','Students'],['open','Open positions'],['alumni','Alumni']];
+%>
+<% for (const p of pis) { %>
+<div class="pi">
+  <div><% if (p.photo) { %><img class="avatar" src="<%= String(p.photo).replace(/^\//, '') %>" alt="<%= p.name %>"><% } else { %><div class="avatar" role="img" aria-label="<%= p.name %>"><%= initials(p.name) %></div><% } %></div>
+  <div>
+    <div class="section-label"><%= p.role %></div>
+    <h2 style="margin-top:0"><%= p.name %></h2>
+    <p><%= p.bio %></p>
+    <% if (p.interests) { %><p class="mono" style="color:var(--muted)"><%= p.interests %></p><% } %>
+    <div class="links">
+      <% if (p.email) { %><span class="mono"><%= p.email %></span><% } %>
+      <% if (p.website) { %><a href="<%= p.website %>">Website</a><% } %>
+      <% if (p.orcid) { %><a href="<%= p.orcid %>">ORCID</a><% } %>
+      <% if (p.github) { %><a href="<%= p.github %>">GitHub</a><% } %>
+      <% if (p.natgeo) { %><a href="<%= p.natgeo %>">National Geographic Explorer</a><% } %>
+    </div>
+  </div>
+</div>
+<% } %>
+<% for (const [g, label] of groups) { const list = items.filter(p => p.group === g); if (!list.length) continue; %>
+<h3 class="section-label" style="margin-top:3rem;font-size:.8rem"><%= label %></h3>
+<div class="people-grid">
+  <% for (const p of list) { %>
+  <div class="person <%= g === 'open' ? 'open' : '' %>">
+    <% if (p.photo) { %><img class="avatar" src="<%= String(p.photo).replace(/^\//, '') %>" alt="<%= p.name %>"><% } else { %><div class="avatar" aria-hidden="true"><%= g === 'open' ? '+' : initials(p.name) %></div><% } %>
+    <h4><%= g === 'open' ? 'Open position' : p.name %></h4>
+    <div class="role"><%= p.role %></div>
+    <p><%= p.bio %></p>
+    <% if (g === 'open') { %><p><a href="join.html">How to apply →</a></p><% } %>
+  </div>
+  <% } %>
+</div>
+<% } %>
+```

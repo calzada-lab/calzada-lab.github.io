@@ -1,0 +1,84 @@
+```{=html}
+<%
+// Each publication can be typed in by hand (title, authors, venue...) or pasted as BibTeX.
+// Fields typed by hand win over the BibTeX.
+const labels = {article:'Article', chapter:'Book chapter', book:'Book', outreach:'Outreach', report:'Report', preprint:'In preparation', talk:'Presentation'};
+const settings = items.find(i => i.bold_names) || {};
+const boldNames = (settings.bold_names || []).map(n => String(n).toLowerCase());
+const pubs = items.filter(i => i.year || i.bibtex || i.title);
+
+const accents = {"'":{a:'á',e:'é',i:'í',o:'ó',u:'ú',A:'Á',E:'É',I:'Í',O:'Ó',U:'Ú'}, '~':{n:'ñ',N:'Ñ',a:'ã',o:'õ'}, '"':{u:'ü',o:'ö',a:'ä',U:'Ü'}, '`':{a:'à',e:'è',o:'ò'}, '^':{a:'â',e:'ê',o:'ô'}};
+const tex = s => String(s || '')
+  .replace(/\\([’'~"`^])\{?\\?([a-zA-Z])\}?/g, (m, a, c) => (accents[a === '’' ? "'" : a] || {})[c] || c)
+  .replace(/\\&/g, '&').replace(/--/g, '–').replace(/\\textendash/g, '–')
+  .replace(/[{}]/g, '').replace(/\s+/g, ' ').trim();
+function parseBib(src) {
+  const out = {}; if (!src) return out;
+  const head = /@(\w+)\s*\{\s*[^,]*,/.exec(src); if (!head) return out;
+  out._type = head[1].toLowerCase();
+  let i = head.index + head[0].length;
+  while (i < src.length) {
+    const m = /\s*([\w-]+)\s*=\s*/y; m.lastIndex = i; const k = m.exec(src); if (!k) break;
+    i = m.lastIndex; let v = '';
+    if (src[i] === '{') { let d = 0; for (; i < src.length; i++) { const c = src[i]; if (c === '{') d++; else if (c === '}') { d--; if (d === 0) { i++; break; } } v += c; } v = v.slice(1); }
+    else if (src[i] === '"') { i++; for (; i < src.length && src[i] !== '"'; i++) v += src[i]; i++; }
+    else { for (; i < src.length && /[\w]/.test(src[i]); i++) v += src[i]; }
+    out[k[1].toLowerCase()] = v;
+    const sep = /\s*,?/y; sep.lastIndex = i; sep.exec(src); i = sep.lastIndex;
+  }
+  return out;
+}
+const joinNames = l => l.length > 1 ? l.slice(0, -1).join(', ') + ', & ' + l[l.length - 1] : (l[0] || '');
+const fmtAuthors = a => joinNames(tex(a).split(/\s+and\s+/).map(n => {
+  let last, first;
+  if (n.includes(',')) { [last, first] = n.split(',').map(x => x.trim()); }
+  else { const parts = n.trim().split(' '); last = parts.pop(); first = parts.join(' '); }
+  const ini = (first || '').split(/[\s-]+/).filter(Boolean).map(w => w[0] + '.').join(' ');
+  const name = last + (ini ? ', ' + ini : '');
+  return boldNames.some(b => last.toLowerCase() === b) ? '**' + name + '**' : name;
+}));
+const typeFromBib = t => ({article:'article', incollection:'chapter', inbook:'chapter', book:'book', techreport:'report', report:'report', unpublished:'preprint', inproceedings:'talk', misc:'preprint'})[t] || 'article';
+function normalize(p) {
+  const b = parseBib(p.bibtex);
+  let venue = p.venue;
+  if (!venue && b._type) {
+    if (b.journal) venue = tex(b.journal) + (b.volume ? ', ' + b.volume : '') + (b.number ? '(' + b.number + ')' : '') + (b.pages ? ', ' + tex(b.pages) : '');
+    else if (b.booktitle) venue = 'In ' + tex(b.booktitle) + (b.pages ? ' (pp. ' + tex(b.pages) + ')' : '') + (b.publisher ? '. ' + tex(b.publisher) : '');
+    else venue = tex(b.institution || b.publisher || b.howpublished || b.note || '');
+  }
+  return {
+    year: p.year || parseInt(b.year) || '',
+    type: p.type || typeFromBib(b._type),
+    title: p.title || tex(b.title),
+    authors: p.authors || (b.author ? fmtAuthors(b.author) : ''),
+    venue: venue || '',
+    link: p.link || (b.doi ? 'https://doi.org/' + tex(b.doi).replace(/^https?:\/\/(dx\.)?doi\.org\//, '') : tex(b.url || '')),
+  };
+}
+const bold = s => String(s || '').replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+const sorted = pubs.map(normalize).sort((a,b) => (b.year||0) - (a.year||0));
+%>
+<div class="pub-filter" role="group" aria-label="Filter by type">
+  <button type="button" data-f="all" aria-pressed="true">All</button>
+  <% for (const k of Object.keys(labels)) { if (!sorted.some(i => i.type === k)) continue; %><button type="button" data-f="<%= k %>" aria-pressed="false"><%= labels[k] %></button><% } %>
+</div>
+<ul class="pubs">
+<% for (const p of sorted) { %>
+  <li class="pub" data-type="<%= p.type %>">
+    <div class="yr"><%= p.year %></div>
+    <div>
+      <div class="badge-type"><%= labels[p.type] || p.type %></div>
+      <div class="t"><% if (p.link) { %><a href="<%= p.link %>"><%= p.title %></a><% } else { %><%= p.title %><% } %></div>
+      <div class="a"><%= bold(p.authors) %></div>
+      <div class="v"><em><%= p.venue %></em></div>
+    </div>
+  </li>
+<% } %>
+</ul>
+<script>
+document.querySelectorAll('.pub-filter button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.pub-filter button').forEach(x => x.setAttribute('aria-pressed', x === b));
+  document.querySelectorAll('.pub').forEach(li => li.hidden = !(b.dataset.f === 'all' || li.dataset.type === b.dataset.f));
+}));
+</script>
+```

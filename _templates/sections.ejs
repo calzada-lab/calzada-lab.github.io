@@ -1,0 +1,28 @@
+```{=html}
+<%
+const inline = t => String(t || '')
+  .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+  .replace(/\*(.+?)\*/g, '<em>$1</em>')
+  .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+const md = t => String(t || '').trim().split(/\n\s*\n/).map(b => {
+  b = b.trim();
+  if (b.startsWith('### ')) return '<h3>' + inline(b.slice(4)) + '</h3>';
+  if (/^- /.test(b)) return '<ul>' + b.split(/\n/).map(l => '<li>' + inline(l.replace(/^- /, '')) + '</li>').join('') + '</ul>';
+  return '<p>' + inline(b) + '</p>';
+}).join('\n');
+const h = items[0];
+%>
+<% for (const s of (h.sections || [])) { %>
+<section class="band <%= s.style === 'alt' ? 'alt' : (s.style === 'dark' ? 'dark' : '') %>"><div class="wrap">
+  <% if (s.label) { %><div class="section-label"><%= s.label %></div><% } %>
+  <% if (s.title) { %><h2><%= s.title %></h2><% } %>
+  <% if (s.intro) { %><p class="intro"><%= s.intro %></p><% } %>
+  <% if (s.body) { %><div class="prose"><%= md(s.body) %></div><% } %>
+  <% if (s.items && s.items.length) { %>
+  <div class="pillars">
+    <% for (const it of s.items) { %><div class="pillar"><h3><%= it.name %><span>.</span></h3><p><%= inline(it.text) %></p></div><% } %>
+  </div>
+  <% } %>
+</div></section>
+<% } %>
+```

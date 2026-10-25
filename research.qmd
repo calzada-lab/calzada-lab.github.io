@@ -1,0 +1,32 @@
+---
+title: "Research"
+page-layout: full
+# Page text lives in data/pages/research.yml (admin panel: Pages → Research).
+listing:
+  - id: head
+    contents: data/pages/research.yml
+    template: _templates/page-head.ejs
+  - id: themes
+    contents: data/research.yml
+    template: _templates/themes.ejs
+  - id: sections
+    contents: data/pages/research.yml
+    template: _templates/sections.ejs
+---
+
+::: {#head}
+:::
+
+```{=html}
+<section class="band"><div class="wrap">
+```
+
+::: {#themes}
+:::
+
+```{=html}
+</div></section>
+```
+
+::: {#sections}
+:::

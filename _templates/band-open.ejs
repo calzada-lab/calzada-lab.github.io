@@ -1,0 +1,8 @@
+```{=html}
+<% const h = items[0]; const k = templateParams.key; %>
+<section class="band band-head <%= templateParams.style || '' %>"><div class="wrap">
+<% if (h[k + '_label']) { %><div class="section-label"><%= h[k + '_label'] %></div><% } %>
+<% if (h[k + '_title']) { %><h2><%= h[k + '_title'] %></h2><% } %>
+<% if (h[k + '_intro']) { %><p class="intro"><%= h[k + '_intro'] %></p><% } %>
+</div></section>
+```

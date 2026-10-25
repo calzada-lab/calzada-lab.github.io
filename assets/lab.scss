@@ -1,0 +1,37 @@
+/*-- scss:defaults --*/
+// Layout: dark forest-green bands (navbar, hero, stats, page headers, footer) between white sections; NMSU crimson as accent, faint topographic contours in headers.
+$crimson: #8C0B42;   // NMSU crimson: links, accents, highlights
+$wine:    #5E0A2E;   // darker crimson for hovers and text on light tints
+$forest:  #0E3330;   // deep tropical-forest green: footer, secondary accent
+$jade:    #23785A;   // green for labels and tags
+$sand:    #F5F6F3;   // very light warm grey for alternate bands
+$white:   #FFFFFF;
+$ink:     #1F1A1C;   // body text
+$mist:    #E8E1E3;   // rules, borders
+
+$body-bg: $white;
+$body-color: $ink;
+$link-color: $crimson;
+$primary: $crimson;
+$secondary: $forest;
+$navbar-bg: $forest;
+$navbar-fg: #E8EFEA;
+$navbar-hl: #F2B8CD;
+$footer-bg: $forest;
+$footer-fg: #C9D6CF;
+
+$font-family-sans-serif: "Public Sans", "Segoe UI", system-ui, sans-serif;
+$headings-font-family: "Newsreader", Georgia, "Times New Roman", serif;
+$font-family-monospace: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+$headings-font-weight: 500;
+$font-size-root: 17px;
+$border-radius: .35rem;
+
+/*-- scss:rules --*/
+:root {
+  --crimson: #{$crimson}; --wine: #{$wine}; --sand: #{$sand}; --forest: #{$forest}; --jade: #{$jade};
+  --paper: #{$white}; --ink: #{$ink}; --mist: #{$mist};
+  --muted: #5F5759;
+  --display: #{$headings-font-family};
+  --mono: #{$font-family-monospace};
+}

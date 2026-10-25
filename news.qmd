@@ -1,0 +1,35 @@
+---
+title: "News"
+page-layout: full
+# Page text lives in data/pages/news.yml (admin panel: Pages → News).
+listing:
+  - id: head
+    contents: data/pages/news.yml
+    template: _templates/page-head.ejs
+  - id: news
+    contents: news/*.qmd
+    sort: "date desc"
+    template: _templates/news.ejs
+    template-params: { filter: true }
+    date-format: "MMM D, YYYY"
+  - id: sections
+    contents: data/pages/news.yml
+    template: _templates/sections.ejs
+---
+
+::: {#head}
+:::
+
+```{=html}
+<section class="band"><div class="wrap">
+```
+
+::: {#news}
+:::
+
+```{=html}
+</div></section>
+```
+
+::: {#sections}
+:::

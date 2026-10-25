@@ -1,0 +1,9 @@
+```{=html}
+<% const h = items[0]; %>
+<section class="band alt">
+  <div class="wrap">
+    <div class="section-label"><%= h.funders_label %></div>
+    <div class="funders"><% for (const f of (h.funders || [])) { %><span><%= f %></span><% } %></div>
+  </div>
+</section>
+```

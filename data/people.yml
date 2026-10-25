@@ -1,0 +1,27 @@
+# Group members. group: pi | student | alumni | open
+- name: "Leonardo Calzada"
+  group: pi
+  role: "Principal Investigator · Assistant Professor"
+  photo: ""
+  bio: "Human-environment geographer and land system scientist. Leo studies how environmental change and access to natural resources shape each other, from forest degradation and local governance in the Maya Forest to the vulnerability of fishing communities in the US Northeast. Before NMSU he earned a PhD in Geography at Rutgers and worked as a cartographer at CONABIO and as Deputy Director of Biosafety Communication at CIBIOGEM. He is a National Geographic Explorer and a Fulbright–García Robles fellow."
+  interests: "Land system science · Remote sensing · Forest dynamics · Environmental governance · Political ecology · Storytelling with maps"
+  email: "lcalzada@nmsu.edu"
+  website: "https://leocalzada.com"
+  orcid: "https://orcid.org/0000-0003-1071-8430"
+  github: "https://github.com/leocalzada"
+  natgeo: "https://explorers.nationalgeographic.org/directory/leonardo-calzada"
+- name: "Your name here"
+  group: open
+  role: "PhD student"
+  photo: ""
+  bio: "Doctoral positions on land change in Latin America and the US Southwest."
+- name: "Your name here"
+  group: open
+  role: "MS student"
+  photo: ""
+  bio: "Master's positions in GIS, remote sensing and land system science."
+- name: "Your name here"
+  group: open
+  role: "Undergraduate researcher"
+  photo: ""
+  bio: "Paid and for-credit research positions for NMSU undergraduates."

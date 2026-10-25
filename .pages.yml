@@ -1,0 +1,286 @@
+# Admin panel (Pages CMS): https://app.pagescms.org
+# Sign in with GitHub, pick this repository, and edit the forms. Every save republishes the site.
+media:
+  input: assets/img
+  output: /assets/img
+
+content:
+  - name: news
+    label: News & talks
+    type: collection
+    path: news
+    filename: "{year}-{month}-{day}-{primary}.qmd"
+    view:
+      fields: [title, date, categories]
+      default: { sort: date, order: desc }
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: date, label: Date, type: date, required: true }
+      - { name: description, label: Short summary (shown in lists), type: text }
+      - name: categories
+        label: Category
+        type: select
+        list: true
+        options: { values: [group, publication, talk, fieldwork, award, outreach, people, funding] }
+      - { name: image, label: Photo (optional), type: image }
+      - { name: body, label: Full text, type: rich-text }
+
+  - name: publications
+    label: Publications
+    type: file
+    path: data/publications.yml
+    list: true
+    fields:
+      - { name: bibtex, label: "BibTeX (paste here; the fields below are optional and override it)", type: code, options: { language: latex } }
+      - name: type
+        label: Type
+        type: select
+        options: { values: [article, chapter, book, outreach, report, preprint, talk] }
+      - { name: year, label: Year, type: number }
+      - { name: title, label: Title, type: text }
+      - { name: authors, label: "Authors (use **bold** for group members)", type: string }
+      - { name: venue, label: Journal / book / venue, type: string }
+      - { name: link, label: DOI or URL, type: string }
+
+  - name: research
+    label: Research projects
+    type: file
+    path: data/research.yml
+    list: true
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: image, label: Card photo (optional), type: image }
+      - { name: tag, label: Place, type: string }
+      - { name: color, label: "Card color if no photo (hex, e.g. #8C0B42)", type: string }
+      - { name: summary, label: Summary, type: text }
+      - { name: methods, label: Methods (tags), type: string, list: true }
+      - { name: funding, label: Funding, type: string }
+      - { name: link, label: Key paper or project link, type: string }
+
+  - name: people
+    label: People
+    type: file
+    path: data/people.yml
+    list: true
+    fields:
+      - { name: name, label: Name, type: string, required: true }
+      - name: group
+        label: Group
+        type: select
+        options: { values: [pi, student, alumni, open] }
+      - { name: role, label: Role, type: string }
+      - { name: photo, label: Photo (square), type: image }
+      - { name: bio, label: Short bio, type: text }
+      - { name: interests, label: Interests, type: string }
+      - { name: email, label: Email, type: string }
+      - { name: website, label: Website, type: string }
+      - { name: orcid, label: ORCID URL, type: string }
+      - { name: github, label: GitHub URL, type: string }
+      - { name: natgeo, label: National Geographic Explorer URL, type: string }
+
+  - name: home
+    label: "Page text: Home"
+    type: file
+    path: data/home.yml
+    list: { min: 1, max: 1 }
+    fields:
+      - { name: hero_image, label: Top photo (optional; a dark green overlay is added), type: image }
+      - { name: eyebrow, label: Small text above the headline, type: string }
+      - { name: headline, label: "Headline (wrap a word in *asterisks* to highlight it)", type: string }
+      - { name: lede, label: Intro paragraph, type: text }
+      - { name: button_primary, label: First button, type: string }
+      - { name: button_secondary, label: Second button, type: string }
+      - { name: sites, label: Field sites (coordinates · place), type: string, list: true }
+      - { name: what_label, label: "'What we do': small label", type: string }
+      - { name: what_title, label: "'What we do': title", type: string }
+      - { name: what_intro, label: "'What we do': intro", type: text }
+      - name: pillars
+        label: "'What we do': three pillars"
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Word, type: string }
+          - { name: text, label: Description, type: text }
+      - { name: numbers_label, label: "Numbers: small label", type: string }
+      - { name: numbers_title, label: "Numbers: title", type: string }
+      - name: stats
+        label: Numbers
+        type: object
+        list: true
+        fields:
+          - { name: value, label: Number, type: string }
+          - { name: label, label: Label, type: string }
+      - { name: story_label, label: "Research overview: small label", type: string }
+      - { name: story_title, label: "Research overview: title", type: string }
+      - name: story
+        label: Research overview steps
+        type: object
+        list: true
+        fields:
+          - { name: label, label: Heading, type: string }
+          - { name: text, label: Text, type: text }
+      - { name: video, label: "Video embed URL (optional, e.g. https://www.youtube.com/embed/ID)", type: string }
+      - { name: research_label, label: "Research areas: small label", type: string }
+      - { name: research_title, label: "Research areas: title", type: string }
+      - { name: research_intro, label: "Research areas: intro", type: text }
+      - { name: news_label, label: "News: small label", type: string }
+      - { name: news_title, label: "News: title", type: string }
+      - { name: news_link, label: "News: link text", type: string }
+      - { name: funders_label, label: "Funders: label", type: string }
+      - { name: funders, label: Funders, type: string, list: true }
+
+  - name: page-research
+    label: "Page text: Research"
+    type: file
+    path: data/pages/research.yml
+    list: { min: 1, max: 1 }
+    fields:
+      - { name: eyebrow, label: Small text above the title, type: string }
+      - { name: title, label: Page title, type: string }
+      - { name: intro, label: Intro paragraph, type: text }
+      - { name: image, label: Header photo (optional), type: image }
+      - name: sections
+        label: Sections
+        type: object
+        list: true
+        fields:
+          - name: style
+            label: Background
+            type: select
+            options: { values: [plain, alt, dark] }
+          - { name: label, label: Small label, type: string }
+          - { name: title, label: Section title, type: string }
+          - { name: intro, label: Intro sentence, type: text }
+          - { name: body, label: "Text (blank line = new paragraph, **bold**, [link](https://...), ### subheading)", type: text }
+          - name: items
+            label: Columns (title + text)
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Title, type: string }
+              - { name: text, label: Text, type: text }
+
+  - name: page-people
+    label: "Page text: People"
+    type: file
+    path: data/pages/people.yml
+    list: { min: 1, max: 1 }
+    fields:
+      - { name: eyebrow, label: Small text above the title, type: string }
+      - { name: title, label: Page title, type: string }
+      - { name: intro, label: Intro paragraph, type: text }
+      - { name: image, label: Header photo (optional), type: image }
+      - name: sections
+        label: Sections
+        type: object
+        list: true
+        fields:
+          - name: style
+            label: Background
+            type: select
+            options: { values: [plain, alt, dark] }
+          - { name: label, label: Small label, type: string }
+          - { name: title, label: Section title, type: string }
+          - { name: intro, label: Intro sentence, type: text }
+          - { name: body, label: "Text (blank line = new paragraph, **bold**, [link](https://...), ### subheading)", type: text }
+          - name: items
+            label: Columns (title + text)
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Title, type: string }
+              - { name: text, label: Text, type: text }
+
+  - name: page-publications
+    label: "Page text: Publications"
+    type: file
+    path: data/pages/publications.yml
+    list: { min: 1, max: 1 }
+    fields:
+      - { name: eyebrow, label: Small text above the title, type: string }
+      - { name: title, label: Page title, type: string }
+      - { name: intro, label: Intro paragraph, type: text }
+      - { name: image, label: Header photo (optional), type: image }
+      - name: sections
+        label: Sections
+        type: object
+        list: true
+        fields:
+          - name: style
+            label: Background
+            type: select
+            options: { values: [plain, alt, dark] }
+          - { name: label, label: Small label, type: string }
+          - { name: title, label: Section title, type: string }
+          - { name: intro, label: Intro sentence, type: text }
+          - { name: body, label: "Text (blank line = new paragraph, **bold**, [link](https://...), ### subheading)", type: text }
+          - name: items
+            label: Columns (title + text)
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Title, type: string }
+              - { name: text, label: Text, type: text }
+      - { name: bold_names, label: Surnames to bold automatically in author lists, type: string, list: true }
+
+  - name: page-news
+    label: "Page text: News"
+    type: file
+    path: data/pages/news.yml
+    list: { min: 1, max: 1 }
+    fields:
+      - { name: eyebrow, label: Small text above the title, type: string }
+      - { name: title, label: Page title, type: string }
+      - { name: intro, label: Intro paragraph, type: text }
+      - { name: image, label: Header photo (optional), type: image }
+      - name: sections
+        label: Sections
+        type: object
+        list: true
+        fields:
+          - name: style
+            label: Background
+            type: select
+            options: { values: [plain, alt, dark] }
+          - { name: label, label: Small label, type: string }
+          - { name: title, label: Section title, type: string }
+          - { name: intro, label: Intro sentence, type: text }
+          - { name: body, label: "Text (blank line = new paragraph, **bold**, [link](https://...), ### subheading)", type: text }
+          - name: items
+            label: Columns (title + text)
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Title, type: string }
+              - { name: text, label: Text, type: text }
+
+  - name: page-join
+    label: "Page text: Join us"
+    type: file
+    path: data/pages/join.yml
+    list: { min: 1, max: 1 }
+    fields:
+      - { name: eyebrow, label: Small text above the title, type: string }
+      - { name: title, label: Page title, type: string }
+      - { name: intro, label: Intro paragraph, type: text }
+      - { name: image, label: Header photo (optional), type: image }
+      - name: sections
+        label: Sections
+        type: object
+        list: true
+        fields:
+          - name: style
+            label: Background
+            type: select
+            options: { values: [plain, alt, dark] }
+          - { name: label, label: Small label, type: string }
+          - { name: title, label: Section title, type: string }
+          - { name: intro, label: Intro sentence, type: text }
+          - { name: body, label: "Text (blank line = new paragraph, **bold**, [link](https://...), ### subheading)", type: text }
+          - name: items
+            label: Columns (title + text)
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Title, type: string }
+              - { name: text, label: Text, type: text }
