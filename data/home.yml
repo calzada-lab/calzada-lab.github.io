@@ -16,11 +16,14 @@ sites:
   - 41.5° N 70.7° W · New England fishing ports
   - 32.3° N 106.7° W · Las Cruces, NM
 what_label: What we do
-what_title: Integrating remote sensing, land system science and
-  interdisciplinary perspectives
-what_intro: Landscapes record policy, markets, environmental change and everyday
-  decisions. We connect these scales, from a 30-meter pixel to a conversation in
-  a community assembly.
+what_title: Integrating ecological and social perspectives on landscape
+  change  **Land systems science, political ecology, and landscape ecology in
+  practice**
+what_intro: Environmental change emerges through the interactions of ecological
+  processes, institutions, policy and local livelihoods. We use mixed methods,
+  from remote sensing and spatial modeling to participatory mapping and
+  ethnographic research, to connect patterns of change with the processes that
+  produce them.
 pillars:
   - name: Observe
     text: We monitor landscape change with satellite time series, biomass estimates
