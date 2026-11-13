@@ -93,6 +93,7 @@ content:
       - { name: interests, label: Interests, type: string }
       - { name: email, label: Email, type: string }
       - { name: website, label: Website, type: string }
+      - { name: cv, label: CV (PDF; upload a new one to replace it), type: file }
       - { name: orcid, label: ORCID URL, type: string }
       - { name: github, label: GitHub URL, type: string }
       - { name: natgeo, label: National Geographic Explorer URL, type: string }

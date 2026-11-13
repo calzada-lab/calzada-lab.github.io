@@ -14,6 +14,7 @@ const groups = [['student','Students'],['open','Open positions'],['alumni','Alum
     <% if (p.interests) { %><p class="mono" style="color:var(--muted)"><%= p.interests %></p><% } %>
     <div class="links">
       <% if (p.email) { %><span class="mono"><%= p.email %></span><% } %>
+      <% if (p.cv) { %><a href="<%= p.cv.replace(/^\//, '') %>">CV (PDF)</a><% } %>
       <% if (p.website) { %><a href="<%= p.website %>">Website</a><% } %>
       <% if (p.orcid) { %><a href="<%= p.orcid %>">ORCID</a><% } %>
       <% if (p.github) { %><a href="<%= p.github %>">GitHub</a><% } %>
